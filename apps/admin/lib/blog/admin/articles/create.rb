@@ -1,17 +1,22 @@
-require 'blog/operation'
-require 'blog/admin/articles/form_schema'
-require 'blog/admin/import'
+require "blog/operation"
+require "blog/admin/import"
+require_relative "form_schema"
 
 module Blog
   module Admin
     module Articles
       class Create < Blog::Operation
-        include Import['article_repo']
+        include Import["article_repo"]
 
-        def call(args)
-          article_validation = FormSchema.call(args)
+        def call(params)
+          validation = FormSchema.(params)
 
-          article_validation.success? ? Right(article_repo.create(args)) : Left(article_validation)
+          if validation.success?
+            article = article_repo.create(validation)
+            Right(article)
+          else
+            Left(validation)
+          end
         end
       end
     end
