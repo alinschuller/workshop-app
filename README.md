@@ -79,23 +79,23 @@ After completing these exercises, re-run the specs and ensure they're all passin
 ### In practice
 
 - Think of some examples of where and how these would have helped in your own applications:
-  - [ ] Types
-  - [ ] Typed structs or value objects
-  - [ ] Standalone validation schemas
+  - [x] Types
+  - [x] Typed structs or value objects
+  - [x] Standalone validation schemas
 
 ### Further exploration
 
 #### Types
 
-- [ ] Type with default
-- [ ] Constrained type using predicates
-- [ ] Type with custom constructor
+- [x] Type with default
+- [x] Constrained type using predicates
+- [x] Type with custom constructor
 
 #### Validation
 
-- [ ] Use a custom predicate (with custom error message)
-- [ ] Write a schema for nested data
-- [ ] Write a high-level validation block
+- [x] Use a custom predicate (with custom error message)
+- [x] Write a schema for nested data
+- [x] Write a high-level validation block
 
 If you need to catch up, merge the completed work:
 
@@ -120,32 +120,32 @@ There should be failures for examples in this file:
 
 ### Building a functional object
 
-- [ ] Create a functional operation class for creating an article, in `apps/admin/lib/blog/admin/articles/create.rb`
-- [ ] Define a `#call` method accepting article params
-- [ ] Use the `FormSchema` we already created to validate these params
-- [ ] Create a dummy article repository class (with a `#create` method) at `apps/admin/lib/blog/admin/article_repo.rb`
-- [ ] Inject the article_repo into the `Articles::Create` functional object
-- [ ] When article params are valid, create an article using the repo and return it wrapped in a `Right`
-- [ ] When article params are invalid, return the validation result wrapped in a `Left`
+- [x] Create a functional operation class for creating an article, in `apps/admin/lib/blog/admin/articles/create.rb`
+- [x] Define a `#call` method accepting article params
+- [x] Use the `FormSchema` we already created to validate these params
+- [x] Create a dummy article repository class (with a `#create` method) at `apps/admin/lib/blog/admin/article_repo.rb`
+- [x] Inject the article_repo into the `Articles::Create` functional object
+- [x] When article params are valid, create an article using the repo and return it wrapped in a `Right`
+- [x] When article params are invalid, return the validation result wrapped in a `Left`
 
 ### Inspecting the system
 
 - Inspect the `Blog::Admin::Container` system container
-  - [ ] Open the console and inspect its `.keys`
-  - [ ] Resolve an `articles.create` object from the container
-  - [ ] Call the object with valid/invalid attributes to inspect its output
+  - [x] Open the console and inspect its `.keys`
+  - [x] Resolve an `articles.create` object from the container
+  - [x] Call the object with valid/invalid attributes to inspect its output
 - Inspect the behavior of a non-finalized container
-  - [ ] Comment out the code that finalizes the container (in `apps/admin/system/boot.rb`)
-  - [ ] Open the console and inspect the container's `.keys`
-  - [ ] Count the number of loaded Ruby source files (via `$LOADED_FEATURES.grep(/workshop-app/).count`)
-  - [ ] Initialize an `Admin::Articles::Create` object directly
-  - [ ] Inspect the container's `.keys` again
-  - [ ] Count the number of loaded Ruby source files again (via `$LOADED_FEATURES.grep(/workshop-app/).count`)
+  - [x] Comment out the code that finalizes the container (in `apps/admin/system/boot.rb`)
+  - [x] Open the console and inspect the container's `.keys`
+  - [x] Count the number of loaded Ruby source files (via `$LOADED_FEATURES.grep(/workshop-app/).count`)
+  - [x] Initialize an `Admin::Articles::Create` object directly
+  - [x] Inspect the container's `.keys` again
+  - [x] Count the number of loaded Ruby source files again (via `$LOADED_FEATURES.grep(/workshop-app/).count`)
 
 ### In practice
 
-- [ ] Think of how something you've written before could be modelled as functional objects
-- [ ] Think of something you've written that would have been better broken up into smaller units of responsibility
+- [x] Think of how something you've written before could be modelled as functional objects
+- [x] Think of something you've written that would have been better broken up into smaller units of responsibility
 
 If you need to catch up, merge the completed work:
 
