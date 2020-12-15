@@ -64,7 +64,7 @@ There should be failures for examples in the following files:
 
 ### Structs
 
-- [ ] Make an `Article` struct class with the following atributes
+- [x] Make an `Article` struct class with the following atributes
   - `title` (strict string)
   - `status` (`ArticleStatus`)
   - `published_at` (optional strict time)
