@@ -44,7 +44,7 @@ RSpec.describe "Blog::Admin::Articles::FormSchema" do
       end
 
       it "accepts nil" do
-        expect(schema.(attributes.merge(published_at: nil))).to be_success
+        expect(schema.(attributes.merge(published_at: nil, status: "draft"))).to be_success
       end
     end
   end
