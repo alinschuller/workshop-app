@@ -60,7 +60,7 @@ There should be failures for examples in the following files:
 
 ### Types
 
-- [ ] Make a strict string enum type called `ArticleStatus`
+- [x] Make a strict string enum type called `ArticleStatus`
 
 ### Structs
 
