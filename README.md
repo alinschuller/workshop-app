@@ -71,7 +71,7 @@ There should be failures for examples in the following files:
 
 ### Validation
 
-- [ ] Update `Admin::Articles::FormSchema` to validate input to match the `Article` struct attributes
+- [x] Update `Admin::Articles::FormSchema` to validate input to match the `Article` struct attributes
 - [ ] Add a high-level rule to validate that `published_at` is filled only when `status` is set to "published"
 
 After completing these exercises, re-run the specs and ensure they're all passing.
