@@ -6,6 +6,10 @@ module Persistence
           belongs_to :author
         end
       end
+
+      def ordered_by_created_at
+        order(self[:created_at].desc)
+      end
     end
   end
 end
