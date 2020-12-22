@@ -204,7 +204,7 @@ Inspect the basic setup:
 
 - [x] Enable `create` command on repo
 - [x] Enable `update` command on repo using `by_pk` restriction
-- [ ] Test writing/reading/updating article records from the console
+- [x] Test writing/reading/updating article records from the console
 
 ### Refactoring
 
@@ -239,12 +239,12 @@ There should be failures for examples in this file:
 ./spec/main/unit/views/home_spec.rb
 ```
 
-- [ ] Set up the `Blog::Main::Views::Home` view controller:
-  - [ ] Inject an `article_repo` dependency
-  - [ ] Add an `articles` exposure returning `articles_repo.listing`
-- [ ] Add the `#listing` method to `Blog::Main::ArticleRepo` (return published articles only, ordered by `published_at` descending)
-- [ ] Fill in `web/templates/home.html.slim` template so it displays each article
-- [ ] Test your work by running the app and viewing it in the browser
+- [x] Set up the `Blog::Main::Views::Home` view controller:
+  - [x] Inject an `article_repo` dependency
+  - [x] Add an `articles` exposure returning `articles_repo.listing`
+- [x] Add the `#listing` method to `Blog::Main::ArticleRepo` (return published articles only, ordered by `published_at` descending)
+- [x] Fill in `web/templates/home.html.slim` template so it displays each article
+- [x] Test your work by running the app and viewing it in the browser
 
 If you need to catch up, merge the completed work:
 
