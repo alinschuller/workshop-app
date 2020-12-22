@@ -6,7 +6,7 @@ module Blog
     class ArticleRepo < Blog::Repository[:articles]
       struct_namespace Entities
 
-      commands :create
+      commands :create, update: :by_pk
 
       def by_id(id)
         articles.by_pk(id).one

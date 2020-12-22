@@ -184,26 +184,26 @@ There should be failures for examples in this file:
 
 Inspect the basic setup:
 
-- [ ] Bootable component in `system/boot/persistence.rb`
-- [ ] Migrations in `db/migrate`
-- [ ] Relations in `lib/persistence/relations`
-- [ ] Test factories in `spec/factories`
-- [ ] Articles repo at `apps/admin/lib/admin/persistence/articles_repo.rb`
+- [x] Bootable component in `system/boot/persistence.rb`
+- [x] Migrations in `db/migrate`
+- [x] Relations in `lib/persistence/relations`
+- [x] Test factories in `spec/factories`
+- [x] Articles repo at `apps/admin/lib/admin/persistence/articles_repo.rb`
 
 ### Reading data
 
-- [ ] Define an "author" association on articles
-  - [ ] Specify a `belongs_to :author` association in articles relation
-  - [ ] Update `spec/factories/articles.rb` to include this association
-- [ ] Add `#by_pk` to repo for reading individual records
-- [ ] Add `#listing` to repo for reading lists of articles
-  - [ ] Order articles by created_at time descending
-  - [ ] Aggregate articles with their author
+- [x] Define an "author" association on articles
+  - [x] Specify a `belongs_to :author` association in articles relation
+  - [x] Update `spec/factories/articles.rb` to include this association
+- [x] Add `#by_pk` to repo for reading individual records
+- [x] Add `#listing` to repo for reading lists of articles
+  - [x] Order articles by created_at time descending
+  - [x] Aggregate articles with their author
 
 ### Writing data
 
-- [ ] Enable `create` command on repo
-- [ ] Enable `update` command on repo using `by_pk` restriction
+- [x] Enable `create` command on repo
+- [x] Enable `update` command on repo using `by_pk` restriction
 - [ ] Test writing/reading/updating article records from the console
 
 ### Refactoring

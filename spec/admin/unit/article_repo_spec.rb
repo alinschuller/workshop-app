@@ -14,6 +14,16 @@ RSpec.describe Blog::Admin::ArticleRepo do
     end
   end
 
+  describe "#update by_pk" do
+    let!(:article) { Factory[:article, title: "My article"] }
+
+    it "returns an article by ID" do
+      result = repo.update(article.id, title: "New Article")
+
+      expect(result.title).to eq "New Article"
+    end
+  end
+
   describe "#by_id" do
     let!(:article) { Factory[:article, title: "My article"] }
 
